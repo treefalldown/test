@@ -17,12 +17,6 @@ function setup() {
   for (let i = 0; i < wrenchRotateElements.length; i++) {
     wrenchRotate[i] = new WrenchRotate(wrenchRotateElements[i]);
   }
-  
-  urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has('frame')) {
-    save(cnv, 'CuriousObjects.png');
-  }
-
 }
 
 function draw() {
@@ -65,8 +59,11 @@ function draw() {
   }
   pop();
 
-
-
+    
+  urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('frame')) {
+    save(cnv, 'CuriousObjects.png');
+  }
 }
 
 function drawWrench(wrenchColor) {
