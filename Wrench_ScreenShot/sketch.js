@@ -5,6 +5,7 @@ let wrenchRotateElements = [circ01, rect01, circ02, rect02, circ03, rect03]
 let wrenchRotate =[]
 
 let scaleFactor = 2/3;
+let urlParams;
 
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
@@ -63,7 +64,7 @@ function draw() {
 //   const URL = 'https://treefalldown.github.io/Application/Wrench/'
 //   let [first, last] = URL.split("?")
   
-  let urlParams = new URLSearchParams(window.location.search);
+  urlParams = new URLSearchParams(window.location.search);
   
   if (urlParams.has('frames')) {
     console.log('test')
