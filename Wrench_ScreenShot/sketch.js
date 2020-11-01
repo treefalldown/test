@@ -60,18 +60,11 @@ function draw() {
   }
   pop();
 
-  
-//   const URL = 'https://treefalldown.github.io/Application/Wrench/'
-//   let [first, last] = URL.split("?")
-  
   urlParams = new URLSearchParams(window.location.search);
   
-  if (urlParams.has('frames')) {
-    console.log('test')
+  if (urlParams.has('frame')) {
+    
     save(cnv, 'CuriousObjects.png');
-    // rect(100, 100, 100, 100)
-    console.log('test')
-
   }
 
 }
