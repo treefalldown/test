@@ -59,7 +59,13 @@ function draw() {
   }
   pop();
 
-  if (last === "frame") {
+  
+//   const URL = 'https://treefalldown.github.io/Application/Wrench/'
+//   let [first, last] = URL.split("?")
+  
+  let urlParams = new URLSearchParams(window.location.search);
+  
+  if (urlParams.has('frames')) {
     console.log('test')
     save(cnv, 'CuriousObjects.png');
     // rect(100, 100, 100, 100)
@@ -107,5 +113,4 @@ function windowResized() {
 }
 
 
-const URL = 'https://treefalldown.github.io/Application/Wrench/'
-const [first, last] = URL.split("?")
+
