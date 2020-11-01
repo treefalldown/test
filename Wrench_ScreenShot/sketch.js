@@ -7,7 +7,7 @@ let wrenchRotate =[]
 let scaleFactor = 2/3;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  cnv = createCanvas(windowWidth, windowHeight);
   rectMode(CENTER)
   angleMode(DEGREES);
   for (let i = 0; i < wrenchElements.length; i++) {
@@ -61,7 +61,7 @@ function draw() {
 
   if (last === "frame") {
     console.log('test')
-    saveFrames('out', 'png', 1, 1, data => {print(data);})
+    save(cnv, 'CuriousObjects.png');
     // rect(100, 100, 100, 100)
     console.log('test')
 
