@@ -6,6 +6,7 @@ let wrenchRotate =[]
 
 let scaleFactor = 2/3;
 let urlParams;
+let count = 0;
 
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
@@ -61,7 +62,7 @@ function draw() {
 
   
   urlParams = new URLSearchParams(window.location.search);
-  let count = 0;
+
   if (urlParams.has('frame')) {
     if (count === 1) {
       save(cnv, 'CuriousObjects.png');
