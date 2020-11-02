@@ -59,10 +59,14 @@ function draw() {
   }
   pop();
 
-    
+  
   urlParams = new URLSearchParams(window.location.search);
+  let count = 0;
   if (urlParams.has('frame')) {
+    if (count === 1) {
     save(cnv, 'CuriousObjects.png');
+    };
+    count++;
   }
 }
 
