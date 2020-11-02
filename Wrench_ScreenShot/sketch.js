@@ -64,7 +64,7 @@ function draw() {
   let count = 0;
   if (urlParams.has('frame')) {
     if (count === 1) {
-    save(cnv, 'CuriousObjects.png');
+      save(cnv, 'CuriousObjects.png');
     };
     count++;
   }
