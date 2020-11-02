@@ -67,6 +67,7 @@ function draw() {
       save(cnv, 'CuriousObjects.png');
     };
     count++;
+    console.log(count);
   }
 }
 
