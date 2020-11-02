@@ -64,7 +64,7 @@ function draw() {
   urlParams = new URLSearchParams(window.location.search);
 
   if (urlParams.has('frame')) {
-    if (count === 1) {
+    if (count === 20) {
       save(cnv, 'CuriousObjects.png');
     };
     count++;
